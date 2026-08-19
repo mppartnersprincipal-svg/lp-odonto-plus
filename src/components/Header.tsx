@@ -13,7 +13,7 @@ export function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <a href="#inicio" className="header-logo" aria-label={`${site.fullName} — voltar ao início`}>
+        <a href="#inicio" className="header-logo" aria-label={`${site.fullName}, voltar ao início`}>
           <Image src={logo} alt={`Logotipo ${site.name}`} priority sizes="120px" />
         </a>
 

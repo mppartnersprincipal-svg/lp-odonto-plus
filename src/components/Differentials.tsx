@@ -25,7 +25,7 @@ export function Differentials() {
           <span className="overline">Por que a Odonto Plus</span>
           <h2>O que muda quando o tratamento é bem feito desde o começo</h2>
           <p className="section-lead">
-            Preço importa — e o nosso é competitivo. Mas o que faz o tratamento valer a pena não é
+            Preço importa, e o nosso é competitivo. Mas o que faz o tratamento valer a pena não é
             o valor da primeira consulta: é não precisar fazer de novo.
           </p>
         </div>

@@ -8,7 +8,7 @@ export function HowItWorks() {
           <span className="overline">Como funciona</span>
           <h2>Do primeiro contato até o plano de tratamento, em 3 passos</h2>
           <p className="section-lead">
-            Leva menos de uma hora — e você sai sabendo exatamente onde está pisando.
+            Leva menos de uma hora, e você sai sabendo exatamente onde está pisando.
           </p>
         </div>
 

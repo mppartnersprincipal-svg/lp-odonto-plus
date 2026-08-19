@@ -18,7 +18,7 @@ const fontBody = Instrument_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Dentista no Garavelo | Odonto Plus — Aparecida de Goiânia",
+  title: "Dentista no Garavelo | Odonto Plus em Aparecida de Goiânia",
   description:
     "Clínica odontológica no Garavelo, em Aparecida de Goiânia. Avaliação completa com raio-X sem custo, orçamento fechado por escrito e tratamento feito para durar. Agende pelo telefone (62) 3699-9420.",
   alternates: { canonical: "/" },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     siteName: site.fullName,
-    title: "Dentista no Garavelo | Odonto Plus — Aparecida de Goiânia",
+    title: "Dentista no Garavelo | Odonto Plus em Aparecida de Goiânia",
     description:
       "Avaliação completa com raio-X sem custo, orçamento fechado por escrito e tratamento feito para durar. Nova unidade no Garavelo.",
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Fachada da Odonto Plus Unidade Garavelo" }],
@@ -52,6 +52,7 @@ const jsonLd = {
   },
   hasMap: site.maps.directionsUrl,
   image: `${SITE_URL}/og.jpg`,
+  ...(site.social.instagram ? { sameAs: [site.social.instagram] } : {}),
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",

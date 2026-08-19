@@ -39,7 +39,7 @@ export const differentials: Differential[] = [
   {
     icon: "contract",
     title: "Orçamento fechado por escrito",
-    text: "Você recebe o valor completo antes de qualquer procedimento começar. O que combinamos é o que você paga — sem custo que aparece no meio do caminho.",
+    text: "Você recebe o valor completo antes de qualquer procedimento começar. O que combinamos é o que você paga, sem custo que aparece no meio do caminho.",
   },
   {
     icon: "shield",
@@ -49,7 +49,7 @@ export const differentials: Differential[] = [
   {
     icon: "heart",
     title: "Atendimento sem julgamento",
-    text: "Se você tem medo de dentista ou está há anos sem ir, você não é exceção — é a maioria. Aqui o ritmo é o seu, e cada passo é explicado antes.",
+    text: "Se você tem medo de dentista ou está há anos sem ir, você não é exceção: é a maioria. Aqui o ritmo é o seu, e cada passo é explicado antes.",
   },
   {
     icon: "layers",
@@ -64,7 +64,7 @@ export const differentials: Differential[] = [
   {
     icon: "sparkle",
     title: "Estrutura nova no Garavelo",
-    text: "Unidade recém-inaugurada, com equipamentos modernos e protocolo de biossegurança — no seu bairro, sem deslocamento até o centro.",
+    text: "Unidade recém-inaugurada, com equipamentos modernos e protocolo de biossegurança, no seu bairro, sem deslocamento até o centro.",
   },
 ];
 
@@ -106,7 +106,7 @@ export const steps = [
   },
   {
     title: "Plano e valor na mesma consulta",
-    text: "Você sai com o tratamento organizado por prioridade e o orçamento fechado em mãos. Decide com calma — e, se quiser, já começa.",
+    text: "Você sai com o tratamento organizado por prioridade e o orçamento fechado em mãos. Decide com calma. E, se quiser, já começa.",
   },
 ];
 
@@ -147,7 +147,7 @@ export const treatments: Treatment[] = [
   },
   {
     name: "Clareamento dental",
-    text: "Procedimento seguro, feito com acompanhamento profissional e atenção à sensibilidade — sem receita caseira e sem improviso.",
+    text: "Procedimento seguro, feito com acompanhamento profissional e atenção à sensibilidade, sem receita caseira e sem improviso.",
     image: null, // ⚠️ foto pendente de geração — placeholder da marca enquanto isso
     imageAlt: "Escala de clareamento ao lado de um sorriso branco",
   },
@@ -165,7 +165,7 @@ export const treatments: Treatment[] = [
   },
   {
     name: "Extrações",
-    text: "Quando é realmente necessário, feita com técnica e cuidado — e sempre com orientação clara sobre o pós-operatório e a reposição.",
+    text: "Quando é realmente necessário, feita com técnica e cuidado, e sempre com orientação clara sobre o pós-operatório e a reposição.",
     image: null, // ⚠️ foto pendente de geração — placeholder da marca enquanto isso
     imageAlt: "Instrumentos cirúrgicos esterilizados organizados em bandeja",
   },
@@ -187,7 +187,7 @@ export const treatments: Treatment[] = [
 
 export const clinicParagraphs = [
   "Começamos pequeno, em uma unidade só. Deu certo pelo motivo mais simples que existe em bairro: paciente satisfeito indica, e indicação puxa indicação.",
-  "Viramos a Odonto Plus no Centro de Aparecida. Em 2025 abrimos a unidade da Cidade Livre. E agora estamos aqui, no Garavelo, porque é onde muitos dos nossos pacientes já moram — e ninguém deveria atravessar a cidade para cuidar dos dentes.",
+  "Viramos a Odonto Plus no Centro de Aparecida. Em 2025 abrimos a unidade da Cidade Livre. E agora estamos aqui, no Garavelo, porque é onde muitos dos nossos pacientes já moram. E ninguém deveria atravessar a cidade para cuidar dos dentes.",
   "A estrutura é nova. A equipe e o padrão de atendimento são os mesmos que já funcionam há anos nas outras unidades.",
 ];
 
@@ -225,7 +225,7 @@ export const testimonials: Testimonial[] = [];
 export const faqs = [
   {
     q: "Quanto custa o tratamento que eu preciso?",
-    a: "Depende do que o exame mostrar — e preferimos não estimar valor por telefone, porque estimativa vira frustração depois. O que garantimos é isto: na avaliação você recebe o valor exato, fechado e por escrito, antes de qualquer procedimento começar.",
+    a: "Depende do que o exame mostrar, e preferimos não estimar valor por telefone, porque estimativa vira frustração depois. O que garantimos é isto: na avaliação você recebe o valor exato, fechado e por escrito, antes de qualquer procedimento começar.",
   },
   {
     q: "A avaliação é gratuita mesmo?",
@@ -237,7 +237,7 @@ export const faqs = [
   },
   {
     q: "Tenho medo de dentista. Como funciona aí?",
-    a: "Você não é exceção — a maioria dos nossos pacientes chega assim. Trabalhamos com anestesia bem aplicada, ritmo respeitado e explicação de cada passo antes de fazer. Você pode pedir uma pausa a qualquer momento, sem constrangimento.",
+    a: "Você não é exceção: a maioria dos nossos pacientes chega assim. Trabalhamos com anestesia bem aplicada, ritmo respeitado e explicação de cada passo antes de fazer. Você pode pedir uma pausa a qualquer momento, sem constrangimento.",
   },
   {
     q: "Estou com dor agora. Consigo atendimento hoje?",
@@ -249,7 +249,7 @@ export const faqs = [
   },
   {
     q: "Onde fica exatamente a clínica?",
-    a: "Na Av. da Igualdade, Quadra 118, Lote 17, no Garavelo — exatamente em frente à Ótica Paris, no piso superior da Móveis Estrela. Na seção de localização há o mapa e o botão “Como chegar” com a rota pronta.",
+    a: "Na Av. da Igualdade, Quadra 118, Lote 17, no Garavelo, exatamente em frente à Ótica Paris, no piso superior da Móveis Estrela. Na seção de localização há o mapa e o botão “Como chegar” com a rota pronta.",
   },
   // ⚠️ FALTAM 2 PERGUNTAS que dependem de confirmação do cliente:
   //   1. Convênios aceitos (quais? ou "não trabalhamos com convênios"?)

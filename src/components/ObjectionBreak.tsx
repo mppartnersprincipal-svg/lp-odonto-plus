@@ -12,10 +12,10 @@ export function ObjectionBreak() {
       <div className="container">
         <div className="section-head" data-reveal>
           <span className="overline">Transparência</span>
-          <h2>Não somos os mais baratos do Garavelo — e explicamos o porquê</h2>
+          <h2>Não somos os mais baratos do Garavelo. E explicamos o porquê</h2>
           <p className="section-lead">
             Existe clínica cobrando bem menos que a gente. O que quase ninguém conta é o que
-            precisa ser cortado para chegar naquele preço — e a conta costuma chegar depois, na
+            precisa ser cortado para chegar naquele preço, e a conta costuma chegar depois, na
             forma de retrabalho.
           </p>
         </div>

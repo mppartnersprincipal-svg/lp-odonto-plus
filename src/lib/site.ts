@@ -9,7 +9,7 @@
 export const site = {
   name: "Odonto Plus",
   unit: "Unidade Garavelo",
-  fullName: "Odonto Plus — Unidade Garavelo",
+  fullName: "Odonto Plus Unidade Garavelo",
   description:
     "Clínica odontológica no Garavelo, em Aparecida de Goiânia. Avaliação completa com raio-X sem custo, orçamento fechado por escrito e tratamento feito para durar.",
 
@@ -73,9 +73,9 @@ export const site = {
     googleReviews: null as number | null,
   },
 
-  /** ⚠️ PREENCHER quando existirem perfis oficiais */
+  /** Perfis oficiais (⚠️ Facebook pendente) */
   social: {
-    instagram: null as string | null,
+    instagram: "https://www.instagram.com/odontoplusgaravelo/" as string | null,
     facebook: null as string | null,
   },
 } as const;
@@ -89,7 +89,7 @@ export const scheduleHref: string = site.whatsapp.number
   : site.phone.href;
 
 /** Endereço em linha única, para rodapé e blocos de contato */
-export const fullAddress = `${site.address.street} — ${site.address.complement} — ${site.address.neighborhood}, ${site.address.city} — ${site.address.state}, CEP ${site.address.zip}`;
+export const fullAddress = `${site.address.street}, ${site.address.complement}, ${site.address.neighborhood}, ${site.address.city}/${site.address.state}, CEP ${site.address.zip}`;
 
 /** ⚠️ Enquanto site.url for null, canonical/OG/sitemap usam este placeholder */
 export const SITE_URL: string = site.url ?? "https://odontoplus-garavelo.com.br";

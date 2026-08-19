@@ -7,7 +7,7 @@ export function FinalCta() {
         <h2>Aquele dente não vai melhorar sozinho.</h2>
         <p>
           Cada mês de adiamento costuma transformar uma restauração simples em canal, e um canal em
-          extração. O diagnóstico é gratuito — o que custa caro é seguir sem ele.
+          extração. O diagnóstico é gratuito: o que custa caro é seguir sem ele.
         </p>
         <div className="ctas">
           <a className="btn btn--inverse btn--lg" href={scheduleHref}>

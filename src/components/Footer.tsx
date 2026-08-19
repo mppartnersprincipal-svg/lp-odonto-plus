@@ -13,7 +13,7 @@ export function Footer() {
                ⚠️ Se o cliente fornecer versão clara oficial, trocar aqui. */}
             <Image src={logo} alt={`Logotipo ${site.name}`} loading="lazy" sizes="140px" />
             <p>
-              Unidade Garavelo — odontologia geral e especializada em Aparecida de Goiânia.
+              Unidade Garavelo: odontologia geral e especializada em Aparecida de Goiânia.
               Avaliação, diagnóstico e plano de tratamento com orçamento fechado.
             </p>
           </div>
@@ -54,6 +54,20 @@ export function Footer() {
                   Como chegar
                 </a>
               </li>
+              {site.social.instagram && (
+                <li>
+                  <a href={site.social.instagram} target="_blank" rel="noopener noreferrer">
+                    Instagram: @odontoplusgaravelo
+                  </a>
+                </li>
+              )}
+              {site.social.facebook && (
+                <li>
+                  <a href={site.social.facebook} target="_blank" rel="noopener noreferrer">
+                    Facebook
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
         </div>
@@ -67,7 +81,7 @@ export function Footer() {
           */}
           {site.technicalManager.name && site.technicalManager.cro && (
             <p className="footer-rt">
-              Responsável Técnico: {site.technicalManager.name} — {site.technicalManager.cro}
+              Responsável Técnico: {site.technicalManager.name} · {site.technicalManager.cro}
             </p>
           )}
           <p>
@@ -75,7 +89,7 @@ export function Footer() {
             profissional presencial. Resultados variam conforme cada caso.
           </p>
           <p>
-            © {new Date().getFullYear()} {site.fullName} — {site.address.city}/{site.address.state}
+            © {new Date().getFullYear()} {site.fullName} · {site.address.city}/{site.address.state}
           </p>
         </div>
       </div>

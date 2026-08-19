@@ -31,7 +31,7 @@ export function Hero() {
                   <CheckIcon />
                 </span>
                 <span>
-                  <strong>{b.strong}</strong> — {b.text}
+                  <strong>{b.strong}</strong>: {b.text}
                 </span>
               </li>
             ))}
@@ -63,7 +63,7 @@ export function Hero() {
             </span>
             <span>
               <strong>Em frente à Ótica Paris</strong>
-              <span>Piso superior da Móveis Estrela — Garavelo</span>
+              <span>Piso superior da Móveis Estrela, Garavelo</span>
             </span>
           </div>
         </div>
