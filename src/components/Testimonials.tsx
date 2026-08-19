@@ -20,8 +20,13 @@ export function Testimonials() {
         </div>
 
         <div className="testimonial-grid">
-          {testimonials.map((t) => (
-            <article className="testimonial-card" key={t.name} data-reveal>
+          {testimonials.map((t, i) => (
+            <article
+              className="testimonial-card"
+              key={t.name}
+              data-reveal
+              style={{ "--reveal-delay": `${(i % 3) * 100}ms` } as React.CSSProperties}
+            >
               <span className="testimonial-stars" aria-label={`${t.stars} de 5 estrelas`}>
                 {Array.from({ length: t.stars }).map((_, i) => (
                   <StarIcon key={i} />

@@ -12,7 +12,7 @@ export function TrustBar() {
   return (
     <aside className="trustbar" aria-label="Sobre a Odonto Plus">
       <div className="container trustbar-inner">
-        <div className="trust-item">
+        <div className="trust-item" data-reveal>
           <span className="t-icon">
             <BuildingIcon size={20} />
           </span>
@@ -22,7 +22,11 @@ export function TrustBar() {
           </span>
         </div>
 
-        <div className="trust-item">
+        <div
+          className="trust-item"
+          data-reveal
+          style={{ "--reveal-delay": "120ms" } as React.CSSProperties}
+        >
           <span className="t-icon">
             <BadgeCheckIcon size={20} />
           </span>

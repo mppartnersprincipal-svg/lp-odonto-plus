@@ -11,7 +11,7 @@ export function Location() {
         </div>
 
         <div className="loc-grid">
-          <div className="loc-info" data-reveal>
+          <div className="loc-info" data-reveal="left">
             <div className="loc-ref" style={{ marginBottom: "var(--space-5)" }}>
               <span className="pin">
                 <MapPinIcon size={20} />
@@ -72,7 +72,11 @@ export function Location() {
             </div>
           </div>
 
-          <div className="map-wrap" data-reveal>
+          <div
+            className="map-wrap"
+            data-reveal="right"
+            style={{ "--reveal-delay": "120ms" } as React.CSSProperties}
+          >
             <iframe
               src={site.maps.embedUrl}
               title="Mapa da Odonto Plus Unidade Garavelo no Google Maps"

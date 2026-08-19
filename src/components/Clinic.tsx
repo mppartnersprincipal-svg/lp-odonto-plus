@@ -8,7 +8,7 @@ export function Clinic() {
   return (
     <section className="section" id="clinica">
       <div className="container clinic-grid">
-        <div className="clinic-copy" data-reveal>
+        <div className="clinic-copy" data-reveal="left">
           <span className="overline">A clínica</span>
           <h2>A Odonto Plus não chegou agora. Só chegou agora no Garavelo.</h2>
 
@@ -29,7 +29,11 @@ export function Clinic() {
           </ul>
         </div>
 
-        <div className="clinic-photos" data-reveal>
+        <div
+          className="clinic-photos"
+          data-reveal="right"
+          style={{ "--reveal-delay": "120ms" } as React.CSSProperties}
+        >
           <figure>
             <Image
               src={recepcao}

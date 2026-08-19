@@ -14,7 +14,12 @@ export function HowItWorks() {
 
         <ol className="steps-grid">
           {steps.map((step, i) => (
-            <li className="step-card" key={step.title} data-reveal>
+            <li
+              className="step-card"
+              key={step.title}
+              data-reveal
+              style={{ "--reveal-delay": `${i * 130}ms` } as React.CSSProperties}
+            >
               <span className="step-num" aria-hidden="true">
                 {i + 1}
               </span>

@@ -32,7 +32,11 @@ export function ScrollReveal() {
 
     if (pending.size === 0) return;
 
-    const reveal = (el: HTMLElement) => {
+    const reveal = (el: HTMLElement, instant = false) => {
+      // Na rede de segurança (rolagem muito rápida) o stagger é zerado
+      // para o conteúdo aparecer imediatamente
+      if (instant) el.style.setProperty("--reveal-delay", "0ms");
+      el.classList.remove("reveal-pending");
       el.classList.add("reveal-visible");
       pending.delete(el);
       io.unobserve(el);
@@ -54,7 +58,7 @@ export function ScrollReveal() {
       ticking = false;
       for (const el of Array.from(pending)) {
         const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) reveal(el);
+        if (rect.top < window.innerHeight && rect.bottom > 0) reveal(el, true);
       }
       if (pending.size === 0) removeListeners();
     };
@@ -78,7 +82,10 @@ export function ScrollReveal() {
       io.disconnect();
       removeListeners();
       // Garantia extra: nada fica escondido se o componente desmontar
-      pending.forEach((el) => el.classList.add("reveal-visible"));
+      pending.forEach((el) => {
+        el.classList.remove("reveal-pending");
+        el.classList.add("reveal-visible");
+      });
     };
   }, []);
 

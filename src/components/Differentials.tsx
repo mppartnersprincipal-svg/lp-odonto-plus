@@ -31,10 +31,15 @@ export function Differentials() {
         </div>
 
         <div className="diff-grid">
-          {differentials.map((d) => {
+          {differentials.map((d, i) => {
             const Icon = icons[d.icon];
             return (
-              <article className="diff-card" key={d.title} data-reveal>
+              <article
+                className="diff-card"
+                key={d.title}
+                data-reveal
+                style={{ "--reveal-delay": `${(i % 3) * 100}ms` } as React.CSSProperties}
+              >
                 <span className="diff-icon">
                   <Icon size={24} />
                 </span>

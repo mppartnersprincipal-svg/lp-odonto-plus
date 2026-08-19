@@ -17,8 +17,13 @@ export function Treatments() {
         </div>
 
         <div className="treat-grid">
-          {treatments.map((t) => (
-            <article className="treat-card" key={t.name} data-reveal>
+          {treatments.map((t, i) => (
+            <article
+              className="treat-card"
+              key={t.name}
+              data-reveal
+              style={{ "--reveal-delay": `${(i % 5) * 80}ms` } as React.CSSProperties}
+            >
               <div className="treat-media">
                 {t.image ? (
                   <Image

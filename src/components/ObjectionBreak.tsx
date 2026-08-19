@@ -21,7 +21,7 @@ export function ObjectionBreak() {
         </div>
 
         <div className="compare-grid">
-          <div className="compare-col compare-col--us" data-reveal>
+          <div className="compare-col compare-col--us" data-reveal="left">
             <h3>
               {comparison.us.title}
               <span className="mark">
@@ -40,7 +40,11 @@ export function ObjectionBreak() {
             </ul>
           </div>
 
-          <div className="compare-col compare-col--them" data-reveal>
+          <div
+            className="compare-col compare-col--them"
+            data-reveal="right"
+            style={{ "--reveal-delay": "150ms" } as React.CSSProperties}
+          >
             <h3>
               {comparison.them.title}
               <span className="mark">

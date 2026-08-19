@@ -14,9 +14,14 @@ export function Faq() {
           <h2>O que a gente mais ouve antes da primeira consulta</h2>
         </div>
 
-        <div className="faq-list" data-reveal>
-          {faqs.map((f) => (
-            <details className="faq-item" key={f.q}>
+        <div className="faq-list">
+          {faqs.map((f, i) => (
+            <details
+              className="faq-item"
+              key={f.q}
+              data-reveal
+              style={{ "--reveal-delay": `${Math.min(i * 70, 350)}ms` } as React.CSSProperties}
+            >
               <summary>{f.q}</summary>
               <p className="faq-answer">{f.a}</p>
             </details>
