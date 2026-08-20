@@ -13,8 +13,8 @@ export const site = {
   description:
     "Clínica odontológica no Garavelo, em Aparecida de Goiânia. Avaliação criteriosa com especialista, sem custo, orçamento fechado por escrito e tratamento feito para durar.",
 
-  /** ⚠️ PREENCHER: domínio final do site (ex.: "https://odontoplusgaravelo.com.br"). Sem ele, canonical/OG absolutos e sitemap usam placeholder. */
-  url: null as string | null,
+  /** Domínio final confirmado (registrado na Hostinger, apontado para a Vercel) */
+  url: "https://odontoplusgaravelo.com.br" as string | null,
 
   phone: {
     display: "(62) 3699-9420",
@@ -91,5 +91,5 @@ export const scheduleHref: string = site.whatsapp.number
 /** Endereço em linha única, para rodapé e blocos de contato */
 export const fullAddress = `${site.address.street}, ${site.address.complement}, ${site.address.neighborhood}, ${site.address.city}/${site.address.state}, CEP ${site.address.zip}`;
 
-/** ⚠️ Enquanto site.url for null, canonical/OG/sitemap usam este placeholder */
-export const SITE_URL: string = site.url ?? "https://odontoplus-garavelo.com.br";
+/** Fallback só por segurança de tipo — site.url está preenchido com o domínio real */
+export const SITE_URL: string = site.url ?? "https://odontoplusgaravelo.com.br";
