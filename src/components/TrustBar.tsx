@@ -17,7 +17,7 @@ export function TrustBar() {
             <BuildingIcon size={20} />
           </span>
           <span>
-            <strong>4 unidades</strong>
+            <strong>3 unidades</strong>
             <span>Centro, Cidade Livre e Garavelo</span>
           </span>
         </div>
