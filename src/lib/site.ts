@@ -13,8 +13,8 @@ export const site = {
   description:
     "Clínica odontológica no Garavelo, em Aparecida de Goiânia. Avaliação criteriosa com especialista, sem custo, orçamento fechado por escrito e tratamento feito para durar.",
 
-  /** Domínio final confirmado (registrado na Hostinger, apontado para a Vercel) */
-  url: "https://odontoplusgaravelo.com.br" as string | null,
+  /** Domínio final confirmado (Hostinger → Vercel). A versão canônica no ar é a COM www — o apex faz 308 para ela. */
+  url: "https://www.odontoplusgaravelo.com.br" as string | null,
 
   phone: {
     display: "(62) 3699-9420",
@@ -92,4 +92,4 @@ export const scheduleHref: string = site.whatsapp.number
 export const fullAddress = `${site.address.street}, ${site.address.complement}, ${site.address.neighborhood}, ${site.address.city}/${site.address.state}, CEP ${site.address.zip}`;
 
 /** Fallback só por segurança de tipo — site.url está preenchido com o domínio real */
-export const SITE_URL: string = site.url ?? "https://odontoplusgaravelo.com.br";
+export const SITE_URL: string = site.url ?? "https://www.odontoplusgaravelo.com.br";
