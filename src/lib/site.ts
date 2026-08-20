@@ -64,7 +64,7 @@ export const site = {
   },
 
   /** Horário confirmado pelo cliente */
-  hours: "Segunda a sábado, das 7h30 às 18h · Domingo fechado" as string | null,
+  hours: "Segunda a sábado, das 8h às 18h · Domingo fechado" as string | null,
 
   /** ⚠️ Números de prova social — só renderizam quando preenchidos com dado real */
   trust: {

@@ -253,7 +253,7 @@ export const faqs = [
   },
   {
     q: "Qual é o horário de atendimento?",
-    a: "De segunda a sábado, das 7h30 às 18h. Aos domingos a clínica não abre. Se preferir, chame no WhatsApp e a recepção já encaixa você no melhor horário disponível.",
+    a: "De segunda a sábado, das 8h às 18h. Aos domingos a clínica não abre. Se preferir, chame no WhatsApp e a recepção já encaixa você no melhor horário disponível.",
   },
   {
     q: "Onde fica exatamente a clínica?",
