@@ -15,6 +15,9 @@ export function Header() {
       <div className="container header-inner">
         <a href="#inicio" className="header-logo" aria-label={`${site.fullName}, voltar ao início`}>
           <Image src={logo} alt={`Logotipo ${site.name}`} priority sizes="120px" />
+          <span className="header-wordmark" aria-hidden="true">
+            Odonto&nbsp;<em>Plus</em>
+          </span>
         </a>
 
         <nav className="header-nav" aria-label="Seções da página">

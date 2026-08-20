@@ -405,6 +405,19 @@ img {
   width: auto;
 }
 
+/* Nome da clínica por extenso ao lado da logo — exibido apenas no mobile */
+.header-wordmark {
+  font: 700 19px/1 var(--font-display);
+  letter-spacing: var(--tracking-display);
+  color: var(--text-heading);
+  white-space: nowrap;
+}
+
+.header-wordmark em {
+  font-style: normal;
+  color: var(--color-primary);
+}
+
 .header-nav {
   display: none;
   gap: var(--space-6);
@@ -495,7 +508,8 @@ img {
   }
 
   .nav-toggle,
-  .mobile-menu {
+  .mobile-menu,
+  .header-wordmark {
     display: none;
   }
 }
