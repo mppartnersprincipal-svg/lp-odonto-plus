@@ -60,11 +60,19 @@ jobs.push(
     .then(() => console.log("ok icon.png 512x512")),
 );
 
-// Fotos de tratamento geradas (Higgsfield) — baixa e converte para WebP 800px
-// ⚠️ 5 tratamentos ainda sem foto (limite diário do gerador): próteses,
-// clareamento, extrações, gengivoplastia, frenectomia. Quando gerar/receber,
-// adicione aqui e aponte o import em src/lib/content.ts.
+// Fotos de tratamento geradas (Higgsfield, kling_omni_image) — baixa e
+// converte para WebP 800px. Todas as 10 geradas.
 const generated = {
+  "proteses.webp":
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3DH330Cmq84IorPlYzhryke2j9L/hf_20260820_142042_0207cb9e-923a-430e-b99c-92aab573403b.png",
+  "clareamento.webp":
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3DH330Cmq84IorPlYzhryke2j9L/hf_20260820_142042_cff5d67f-ec45-4b5f-9eb0-852fc2d7014c.png",
+  "extracoes.webp":
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3DH330Cmq84IorPlYzhryke2j9L/hf_20260820_142042_4a49aade-91f6-494c-9774-a316850c6ab5.png",
+  "gengivoplastia.webp":
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3DH330Cmq84IorPlYzhryke2j9L/hf_20260820_142042_c01ce7fd-c150-4cd0-a21c-eee47d92de59.png",
+  "frenectomia.webp":
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3DH330Cmq84IorPlYzhryke2j9L/hf_20260820_142042_e99668eb-3580-4177-82a2-686021d845d1.png",
   "implantes.webp":
     "https://d8j0ntlcm91z4.cloudfront.net/user_3DH330Cmq84IorPlYzhryke2j9L/hf_20260819_180547_b14a4990-8d4c-479e-a472-cace24badaf7.png",
   "canal.webp":

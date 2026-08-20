@@ -5,10 +5,15 @@
 import type { StaticImageData } from "next/image";
 
 import imgImplantes from "@/images/tratamentos/implantes.webp";
+import imgProteses from "@/images/tratamentos/proteses.webp";
 import imgCanal from "@/images/tratamentos/canal.webp";
 import imgFacetas from "@/images/tratamentos/facetas.webp";
+import imgClareamento from "@/images/tratamentos/clareamento.webp";
 import imgRestauracoes from "@/images/tratamentos/restauracoes.webp";
 import imgCoroas from "@/images/tratamentos/coroas.webp";
+import imgExtracoes from "@/images/tratamentos/extracoes.webp";
+import imgGengivoplastia from "@/images/tratamentos/gengivoplastia.webp";
+import imgFrenectomia from "@/images/tratamentos/frenectomia.webp";
 
 /* ---------------------------------------------------------------- HERÓI */
 
@@ -130,7 +135,7 @@ export const treatments: Treatment[] = [
   {
     name: "Próteses tradicionais e flex",
     text: "Feitas sob medida para o seu caso, com encaixe confortável e acabamento natural. Nada de prótese que machuca ou solta na hora errada.",
-    image: null, // ⚠️ foto pendente de geração — placeholder da marca enquanto isso
+    image: imgProteses,
     imageAlt: "Prótese dentária flexível sobre bandeja clínica",
   },
   {
@@ -148,7 +153,7 @@ export const treatments: Treatment[] = [
   {
     name: "Clareamento dental",
     text: "Procedimento seguro, feito com acompanhamento profissional e atenção à sensibilidade, sem receita caseira e sem improviso.",
-    image: null, // ⚠️ foto pendente de geração — placeholder da marca enquanto isso
+    image: imgClareamento,
     imageAlt: "Escala de clareamento ao lado de um sorriso branco",
   },
   {
@@ -166,19 +171,19 @@ export const treatments: Treatment[] = [
   {
     name: "Extrações",
     text: "Quando é realmente necessário, feita com técnica e cuidado, e sempre com orientação clara sobre o pós-operatório e a reposição.",
-    image: null, // ⚠️ foto pendente de geração — placeholder da marca enquanto isso
+    image: imgExtracoes,
     imageAlt: "Instrumentos cirúrgicos esterilizados organizados em bandeja",
   },
   {
     name: "Gengivoplastia",
     text: "Correção do contorno gengival para harmonizar o sorriso, indicada após avaliação individual de cada caso.",
-    image: null, // ⚠️ foto pendente de geração — placeholder da marca enquanto isso
+    image: imgGengivoplastia,
     imageAlt: "Sorriso saudável com contorno gengival harmônico",
   },
   {
     name: "Frenectomia",
     text: "Procedimento simples que corrige o freio labial ou lingual, com impacto direto na fala, na amamentação e no espaçamento dos dentes.",
-    image: null, // ⚠️ foto pendente de geração — placeholder da marca enquanto isso
+    image: imgFrenectomia,
     imageAlt: "Exame do freio labial com espelho odontológico",
   },
 ];
