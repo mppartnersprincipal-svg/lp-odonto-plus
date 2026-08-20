@@ -45,7 +45,7 @@ export function Clinic() {
           <figure>
             <Image
               src={consultorio}
-              alt="Consultório odontológico novo, com cadeira e equipamentos modernos"
+              alt="Consultório odontológico novo da Odonto Plus Garavelo, com cadeira e equipamentos modernos"
               loading="lazy"
               sizes="(min-width: 900px) 22vw, 45vw"
             />

@@ -7,7 +7,7 @@ export function Location() {
       <div className="container">
         <div className="section-head" data-reveal>
           <span className="overline">Onde estamos</span>
-          <h2>No Garavelo, com ponto de referência fácil</h2>
+          <h2>No Garavelo, em Aparecida de Goiânia, com ponto de referência fácil</h2>
         </div>
 
         <div className="loc-grid">

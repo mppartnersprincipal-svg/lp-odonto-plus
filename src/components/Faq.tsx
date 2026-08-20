@@ -11,7 +11,7 @@ export function Faq() {
       <div className="container">
         <div className="section-head" data-reveal>
           <span className="overline">Dúvidas frequentes</span>
-          <h2>O que a gente mais ouve antes da primeira consulta</h2>
+          <h2>O que a gente mais ouve antes da primeira consulta no dentista</h2>
         </div>
 
         <div className="faq-list">

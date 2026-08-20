@@ -9,10 +9,10 @@ export function Treatments() {
       <div className="container">
         <div className="section-head" data-reveal>
           <span className="overline">Tratamentos</span>
-          <h2>Tudo em um lugar só, com a mesma equipe do início ao fim</h2>
+          <h2>Tratamentos odontológicos em um lugar só, com a mesma equipe do início ao fim</h2>
           <p className="section-lead">
-            Da restauração simples ao implante. Não sabe qual você precisa? É exatamente para isso
-            que a avaliação é gratuita.
+            Da restauração simples ao implante dentário, aqui no Garavelo. Não sabe qual você
+            precisa? É exatamente para isso que a avaliação é gratuita.
           </p>
         </div>
 
