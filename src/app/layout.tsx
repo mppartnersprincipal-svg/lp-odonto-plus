@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Instrument_Sans } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { site, SITE_URL } from "@/lib/site";
 import { treatments, faqs } from "@/lib/content";
+import { TrackingEvents } from "@/components/TrackingEvents";
 import "./globals.css";
+
+const GTM_ID = "GTM-MC4TM5W5";
 
 /* Fontes do Design System, self-hosted no build via next/font */
 const fontDisplay = Bricolage_Grotesque({
@@ -93,11 +97,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR" className={`${fontDisplay.variable} ${fontBody.variable}`}>
+      <GoogleTagManager gtmId={GTM_ID} />
       <body>
         <a className="skip-link" href="#conteudo">
           Pular para o conteúdo
         </a>
         {children}
+        <TrackingEvents />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
