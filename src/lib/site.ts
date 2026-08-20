@@ -11,7 +11,7 @@ export const site = {
   unit: "Unidade Garavelo",
   fullName: "Odonto Plus Unidade Garavelo",
   description:
-    "Clínica odontológica no Garavelo, em Aparecida de Goiânia. Avaliação completa com raio-X sem custo, orçamento fechado por escrito e tratamento feito para durar.",
+    "Clínica odontológica no Garavelo, em Aparecida de Goiânia. Avaliação criteriosa com especialista, sem custo, orçamento fechado por escrito e tratamento feito para durar.",
 
   /** ⚠️ PREENCHER: domínio final do site (ex.: "https://odontoplusgaravelo.com.br"). Sem ele, canonical/OG absolutos e sitemap usam placeholder. */
   url: null as string | null,

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Dentista no Garavelo | Odonto Plus em Aparecida de Goiânia",
   description:
-    "Clínica odontológica no Garavelo, em Aparecida de Goiânia. Avaliação completa com raio-X sem custo, orçamento fechado por escrito e tratamento feito para durar. Agende pelo telefone (62) 3699-9420.",
+    "Clínica odontológica no Garavelo, em Aparecida de Goiânia. Avaliação criteriosa com especialista, sem custo, orçamento fechado por escrito e tratamento feito para durar. Agende pelo telefone (62) 3699-9420.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: site.fullName,
     title: "Dentista no Garavelo | Odonto Plus em Aparecida de Goiânia",
     description:
-      "Avaliação completa com raio-X sem custo, orçamento fechado por escrito e tratamento feito para durar. Nova unidade no Garavelo.",
+      "Avaliação criteriosa com especialista, sem custo, orçamento fechado por escrito e tratamento feito para durar. Nova unidade no Garavelo.",
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Fachada da Odonto Plus Unidade Garavelo" }],
   },
   robots: { index: true, follow: true },

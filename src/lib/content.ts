@@ -19,8 +19,8 @@ import imgFrenectomia from "@/images/tratamentos/frenectomia.webp";
 
 export const heroBullets = [
   {
-    strong: "Avaliação e raio-X gratuitos",
-    text: "você entende seu caso antes de decidir qualquer coisa",
+    strong: "Avaliação gratuita com especialista",
+    text: "exame detalhado, para você entender seu caso antes de decidir qualquer coisa",
   },
   {
     strong: "Orçamento fechado na hora",
@@ -106,8 +106,8 @@ export const steps = [
     text: "Conta rapidamente o que está sentindo ou o que gostaria de resolver. Nossa recepção responde e já encaixa você em um horário disponível.",
   },
   {
-    title: "Avaliação completa com raio-X",
-    text: "O dentista examina, faz o raio-X e explica em linguagem simples o que existe, o que é urgente e o que pode esperar com segurança.",
+    title: "Avaliação criteriosa com especialista",
+    text: "O especialista examina seu caso em detalhe e explica em linguagem simples o que existe, o que é urgente e o que pode esperar com segurança. Se for preciso um exame de imagem para fechar o diagnóstico, ele explica o motivo e combina isso com você na hora.",
   },
   {
     title: "Plano e valor na mesma consulta",
@@ -202,7 +202,6 @@ export const clinicParagraphs = [
  */
 export const clinicChecklist = [
   "Consultórios novos e equipamentos modernos",
-  "Raio-X digital feito na própria clínica",
   "Protocolo de biossegurança e esterilização",
   "Equipe com registro ativo no CRO-GO",
 ];
@@ -234,7 +233,11 @@ export const faqs = [
   },
   {
     q: "A avaliação é gratuita mesmo?",
-    a: "Sim: exame clínico, raio-X e orçamento, sem custo e sem compromisso. Se decidir não seguir com o tratamento, você leva o diagnóstico com você e não fica devendo nada.",
+    a: "Sim. O exame clínico com o especialista e o orçamento são gratuitos e sem compromisso. Se decidir não seguir com o tratamento, você leva o diagnóstico com você e não fica devendo nada.",
+  },
+  {
+    q: "A radiografia está inclusa na avaliação gratuita?",
+    a: "A avaliação clínica é gratuita. Alguns casos precisam de radiografia para fechar o diagnóstico com segurança — quando for necessário, o especialista explica o motivo e combina com você antes. Nada é feito sem o seu aval.",
   },
   {
     q: "Vocês parcelam o tratamento?",

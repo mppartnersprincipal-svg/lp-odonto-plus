@@ -20,8 +20,8 @@ export function Hero() {
 
           <p className="hero-sub">
             A Odonto Plus acaba de abrir sua nova unidade no bairro. Comece com uma{" "}
-            <strong>avaliação completa + raio-X, sem custo</strong>, e saia da consulta sabendo
-            exatamente o que precisa ser feito e quanto custa.
+            <strong>avaliação criteriosa, feita por especialista e sem custo</strong>, e saia da
+            consulta sabendo exatamente o que precisa ser feito e quanto custa.
           </p>
 
           <ul className="hero-bullets">
