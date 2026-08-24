@@ -77,6 +77,9 @@ export function Hero() {
             height={fachada.height}
             alt="Fachada da Odonto Plus Unidade Garavelo, no piso superior da Móveis Estrela"
             decoding="async"
+            /* mobile: abaixo da dobra, não precisa competir com o LCP (h1).
+               desktop: o preload acima já buscou o arquivo; o lazy vira cache hit. */
+            loading="lazy"
           />
           <div className="hero-tag">
             <span className="pin">

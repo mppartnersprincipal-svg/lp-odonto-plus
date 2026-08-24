@@ -14,9 +14,9 @@ import { useEffect } from "react";
  * 1. window.dataLayer é criado imediatamente. Qualquer evento disparado antes
  *    do GTM chegar (clique no WhatsApp, telefone…) fica enfileirado e é
  *    processado assim que o container carrega — nenhuma conversão se perde.
- * 2. gtm.js só é injetado depois do evento `load` da página + um período
- *    ocioso (requestIdleCallback, teto de 2,5 s), OU na primeira interação
- *    do usuário (toque, rolagem, tecla), o que acontecer primeiro.
+ * 2. gtm.js só é injetado depois do evento `load` + 2 frames apresentados +
+ *    3 s, OU na primeira interação do usuário (toque, rolagem, tecla), o que
+ *    acontecer primeiro.
  */
 const GTM_URL = "https://www.googletagmanager.com/gtm.js?id=";
 const INTERACTION_EVENTS = ["pointerdown", "touchstart", "keydown", "scroll"] as const;
@@ -39,12 +39,17 @@ export function GtmLoader({ gtmId }: { gtmId: string }) {
       document.head.appendChild(s);
     };
 
+    /* Depois do load: espera 2 frames serem realmente apresentados (rAF duplo,
+       garante que o LCP já foi pintado) e mais 3 s de folga antes de baixar o
+       GTM. Assim o container nunca entra no caminho crítico do LCP nem em
+       máquinas lentas, e page_view continua sendo enviado normalmente. */
+    let timer = 0;
     const onIdle = () => {
-      if (typeof window.requestIdleCallback === "function") {
-        window.requestIdleCallback(load, { timeout: 2500 });
-      } else {
-        window.setTimeout(load, 2000);
-      }
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          timer = window.setTimeout(load, 3000);
+        });
+      });
     };
 
     const onLoad = () => onIdle();
@@ -52,6 +57,7 @@ export function GtmLoader({ gtmId }: { gtmId: string }) {
     const cleanup = () => {
       INTERACTION_EVENTS.forEach((ev) => window.removeEventListener(ev, load));
       window.removeEventListener("load", onLoad);
+      window.clearTimeout(timer);
     };
 
     INTERACTION_EVENTS.forEach((ev) => window.addEventListener(ev, load, { passive: true, once: true }));
