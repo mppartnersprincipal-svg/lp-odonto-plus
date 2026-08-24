@@ -37,6 +37,15 @@ export const metadata: Metadata = {
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Fachada da Odonto Plus Unidade Garavelo" }],
   },
   robots: { index: true, follow: true },
+  /* ?v= forca o navegador a descartar o favicon antigo em cache (a URL /favicon.ico nao muda entre deploys) */
+  icons: {
+    icon: [
+      { url: "/favicon.ico?v=2", sizes: "48x48", type: "image/x-icon" },
+      { url: "/icon.png?v=2", sizes: "512x512", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico?v=2",
+    apple: "/apple-icon.png?v=2",
+  },
 };
 
 /* Structured data schema.org — apenas campos com dado REAL.
