@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { site, scheduleHref } from "@/lib/site";
 import { navLinks } from "@/lib/content";
@@ -9,9 +9,18 @@ import logo from "@/images/logo.png";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  /* Ativa o vidro fosco do header só depois de rolar (ver .header.is-scrolled no CSS) */
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="header">
+    <header className={`header${scrolled ? " is-scrolled" : ""}`}>
       <div className="container header-inner">
         <a href="#inicio" className="header-logo" aria-label={`${site.fullName}, voltar ao início`}>
           <Image src={logo} alt={`Logotipo ${site.name}`} priority sizes="120px" />
